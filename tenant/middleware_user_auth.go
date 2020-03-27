@@ -17,8 +17,8 @@ type AuthedUserService struct {
 	s influxdb.UserService
 }
 
-// NewUserService constructs an instance of an authorizing user serivce.
-func NewUserService(s influxdb.UserService) *AuthedUserService {
+// NewAuthedUserService constructs an instance of an authorizing user serivce.
+func NewAuthedUserService(s influxdb.UserService) *AuthedUserService {
 	return &AuthedUserService{
 		s: s,
 	}
